@@ -1,3 +1,8 @@
-*
-!*.vhdl
-!/
+adder/*
+
+counter/*
+
+!adder/*.vhdl
+
+!counter/*.vhdl
+
