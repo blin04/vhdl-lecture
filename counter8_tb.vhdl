@@ -14,7 +14,7 @@ architecture tb of counter8_tb is
     signal ocnt_int : unsigned (7 downto 0);
 begin
 
-    uut : entity work.counter8(behavioral)
+    uut : entity work.counter8(structural)
     port map (
         clk => clk_int,
         rst => rst_int,
@@ -33,8 +33,6 @@ begin
     stimulus : process 
     begin
         rst_int <= '0';
-        en_int <= '0';
-        wait for 0.2 * CLK_PERIOD;
         en_int <= '1';
         wait for 15 * CLK_PERIOD;
         rst_int <= '1';
