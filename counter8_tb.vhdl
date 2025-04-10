@@ -14,7 +14,7 @@ architecture tb of counter8_tb is
     signal ocnt_int : unsigned (7 downto 0);
 begin
 
-    uut : entity work.counter8(structural)
+    uut : entity work.counter8(behavioral)
     port map (
         clk => clk_int,
         rst => rst_int,
