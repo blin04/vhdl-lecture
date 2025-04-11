@@ -43,4 +43,6 @@ begin
 		cout => oc(1)
 	);
 
+	ocarry <= oc(1);
+
 end architecture structural;
