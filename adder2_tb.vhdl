@@ -21,8 +21,8 @@ begin
 	
 	test : process
 	begin
-		ta <= "01";
-		tb <= "10";
+		ta <= "00";
+		tb <= "00";
 		wait for 50 ns;
 		ta <= "11";
 		tb <= "01";
